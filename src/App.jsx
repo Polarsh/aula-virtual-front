@@ -22,15 +22,15 @@ export default function App() {
     <AppProvider>
       <ScrollToTop />
       <Routes>
-        <Route path='/iniciar-sesion' element={<LoginPage />} />
+        <Route path='/' element={<LoginPage />} />
         <Route path='/matricula' element={<SignUpPage />} />
         <Route path='/libro-de-reclamaciones' element={<ErrorPage />} />
+        <Route path='*' element={<ErrorPage />} />
 
-        <Route path='/' element={<PageLayout />}>
+        {/* <Route path='/' element={<PageLayout />}>
           <Route index element={<HomePage />} />
 
-          <Route path='*' element={<ErrorPage />} />
-        </Route>
+        </Route> */}
       </Routes>
     </AppProvider>
   )

@@ -71,7 +71,7 @@ export default function LoginPage() {
           <p className='mt-10 text-center text-sm text-gray-500'>
             ¿No tienes cuenta?{' '}
             <a
-              href='#'
+              href='/matricula'
               className='font-semibold leading-6 text-indigo-600 hover:text-indigo-500'>
               Crear cuenta
             </a>
