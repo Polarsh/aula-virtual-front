@@ -1,0 +1,32 @@
+{
+  "objetivesList": [
+    {
+      "name": "Objetivo 1",
+      "description": "Nuestros cursos están diseñados para proporcionarte una experiencia educativa de calidad en el área de la salud. Desde la teoría hasta la práctica, nuestro objetivo es brindarte los conocimientos y habilidades necesarios para destacar en tu campo profesional.",
+      "icon": "UserGroupIcon",
+      "imagePath": "/objectives/objective_1.png",
+      "imageAlt": "Objetivo 1"
+    },
+    {
+      "name": "Objetivo 2",
+      "description": "Nos esforzamos por ofrecerte una plataforma de aprendizaje innovadora y efectiva que se adapte a tus necesidades de formación en el área de la salud. Nuestro objetivo es proporcionarte recursos y herramientas que enriquezcan tu experiencia educativa.",
+      "icon": "UserGroupIcon",
+      "imagePath": "/objectives/objective_2.png",
+      "imageAlt": "Objetivo 2"
+    },
+    {
+      "name": "Objetivo 3",
+      "description": "Nos comprometemos a apoyarte en tu desarrollo profesional en el área de la salud. Nuestro objetivo es ayudarte a alcanzar tus metas académicas y profesionales ofreciéndote cursos y recursos educativos de alta calidad y relevancia.",
+      "icon": "UserGroupIcon",
+      "imagePath": "/objectives/objective_3.png",
+      "imageAlt": "Objetivo 3"
+    },
+    {
+      "name": "Objetivo 4",
+      "description": "Nuestro objetivo es fomentar el aprendizaje continuo y el crecimiento profesional en el campo de la salud. A través de nuestros cursos y programas de capacitación, aspiramos a contribuir al desarrollo y la excelencia en el ejercicio de tu profesión.",
+      "icon": "UserGroupIcon",
+      "imagePath": "/objectives/objective_4.png",
+      "imageAlt": "Objetivo 4"
+    }
+  ]
+}

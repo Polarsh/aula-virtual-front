@@ -1,0 +1,60 @@
+{
+  "coursesList": [
+    {
+      "name": "Simulacros nacionales",
+      "description": "Prepárate con nuestros simulacros nacionales para enfrentar con éxito tus exámenes y pruebas de residencia. Obtén acceso a una amplia variedad de preguntas y escenarios que te ayudarán a familiarizarte con el formato y el nivel de dificultad de los exámenes reales.",
+      "to": "/cursos/simulacros-nacionales",
+      "icon": "UserGroupIcon",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/test-variety-e3beb.appspot.com/o/Simulacro%20nacional.png?alt=media&token=adea62f7-446f-41c9-a15b-7dfbdda6fae4",
+      "imageAlt": "Simulacros nacionales"
+    },
+    {
+      "name": "Ciencias básicas 2024",
+      "description": "Domina las ciencias básicas con nuestro curso diseñado para estudiantes de medicina. Aprende los conceptos fundamentales de anatomía, fisiología, bioquímica y más, con materiales didácticos de alta calidad y expertos en la materia.",
+      "to": "/cursos/ciencias-basicas-2024",
+      "icon": "UserGroupIcon",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/test-variety-e3beb.appspot.com/o/Ciencias%20B%C3%A1sicas.png?alt=media&token=1d676ec9-1d6b-4229-9fcd-8e72c89e0810",
+      "imageAlt": "Ciencias básicas 2024"
+    },
+    {
+      "name": "Ciencias básicas intensivo 2024",
+      "description": "Intensifica tu preparación con nuestro curso de ciencias básicas intensivo. Con clases dinámicas y prácticas, te ofrecemos una revisión exhaustiva de los temas clave para ayudarte a alcanzar tus objetivos académicos.",
+      "to": "/cursos/ciencias-basicas-intensivo-2024",
+      "icon": "UserGroupIcon",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/test-variety-e3beb.appspot.com/o/Ciencias Básicas Intensivo.png?alt=media&token=277fbb12-3d4b-4a33-8286-0db3008b17af",
+      "imageAlt": "Ciencias básicas intensivo 2024"
+    },
+    {
+      "name": "Curso SERUMS 2024",
+      "description": "Prepárate para tu servicio rural y urbano marginal de salud (SERUMS) con nuestro curso especializado. Obtén los conocimientos y las habilidades necesarias para desempeñarte de manera efectiva en entornos de atención médica desafiante y hacer una diferencia positiva en la vida de las personas.",
+      "to": "/cursos/curso-serums-2024",
+      "icon": "UserGroupIcon",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/test-variety-e3beb.appspot.com/o/Curso%20SERUM.png?alt=media&token=49f23e45-6e15-4149-a456-1d3510fb2608",
+      "imageAlt": "Curso SERUMS 2024"
+    },
+    {
+      "name": "Preinternado Anual 2024",
+      "description": "Prepárate para tu preinternado anual con nuestro curso completo. Aprende de profesionales experimentados y adquiere experiencia práctica en una variedad de especialidades médicas para estar mejor preparado para tu próxima etapa de formación.",
+      "to": "/cursos/preinternado-anual-2024",
+      "icon": "UserGroupIcon",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/test-variety-e3beb.appspot.com/o/Preinternado%20Anual.png?alt=media&token=2c7706d5-9613-4440-bae9-c34753be09e8",
+      "imageAlt": "Preinternado Anual 2024"
+    },
+    {
+      "name": "ENAM 2024",
+      "description": "Domina el Examen Nacional de Medicina (ENAM) con nuestro curso especializado. Con material de estudio exhaustivo y simulacros de examen, te ayudamos a prepararte para este desafío crucial en tu carrera médica.",
+      "to": "/cursos/enam-2024",
+      "icon": "UserGroupIcon",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/test-variety-e3beb.appspot.com/o/Curso%20ENAM.png?alt=media&token=75def4af-3923-46d4-979a-f97cefe727ae",
+      "imageAlt": "ENAM 2024"
+    },
+    {
+      "name": "Subespecialidad 2024",
+      "description": "Especialízate en el área de tu elección con nuestro curso de subespecialidad. Con un enfoque práctico y personalizado, te ayudamos a desarrollar las habilidades y el conocimiento necesarios para sobresalir en tu campo de especialización.",
+      "to": "/cursos/subespecialidad-2024",
+      "icon": "UserGroupIcon",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/test-variety-e3beb.appspot.com/o/Curso%20Subespecialidad.png?alt=media&token=99f21180-4abc-436c-adf9-e91d006cbbbb",
+      "imageAlt": "Subespecialidad 2024"
+    }
+  ]
+}

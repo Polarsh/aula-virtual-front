@@ -1,0 +1,28 @@
+{
+  "testimonialsList": [
+    {
+      "course": "ENAM 2024",
+      "body": "¡Increíble experiencia! Los cursos proporcionados por esta plataforma me ayudaron enormemente en mi preparación para el examen ENAM. ¡Altamente recomendado!",
+      "author": {
+        "name": "María Rodríguez",
+        "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      }
+    },
+    {
+      "course": "Simulacros nacionales",
+      "body": "Estoy muy agradecido por los recursos y el apoyo brindado por este sitio web. Los simulacros nacionales fueron especialmente útiles para prepararme para mi residencia médica. ¡Gracias!",
+      "author": {
+        "name": "Juan Pérez",
+        "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      }
+    },
+    {
+      "course": "Preinternado Anual 2024",
+      "body": "Excelente plataforma de aprendizaje. Los cursos son muy completos y bien estructurados. Gracias a ellos, he mejorado mi comprensión en áreas clave de la medicina. ¡Totalmente recomendado!",
+      "author": {
+        "name": "Ana García",
+        "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      }
+    }
+  ]
+}

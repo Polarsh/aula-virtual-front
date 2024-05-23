@@ -1,0 +1,104 @@
+{
+  "faqsList": [
+    {
+      "name": "Sobre los Cursos",
+      "faqs": [
+        {
+          "question": "¿Cuáles son los cursos disponibles?",
+          "answer": "Ofrecemos una amplia variedad de cursos diseñados para ayudarte a prepararte para tus exámenes universitarios, así como para los exámenes de SERUMS, ENAM, Preinternado y subespecialidad en el área de la salud."
+        },
+        {
+          "question": "¿Cómo pueden ayudarme los cursos a pasar mis exámenes universitarios?",
+          "answer": "Nuestros cursos están diseñados por expertos en el campo de la salud para cubrir los temas y conceptos clave que se incluyen en los exámenes universitarios. Te proporcionamos recursos de estudio y práctica para que puedas prepararte de manera efectiva y aumentar tus posibilidades de éxito."
+        },
+        {
+          "question": "¿Qué tipo de recursos ofrecen los cursos?",
+          "answer": "Nuestros cursos incluyen material de estudio detallado, preguntas de práctica, exámenes simulados y sesiones de tutoría para ayudarte a comprender los conceptos y practicar tus habilidades antes de los exámenes."
+        },
+        {
+          "question": "¿Cuánto tiempo dura cada curso?",
+          "answer": "La duración de cada curso varía según el contenido y la complejidad del tema. Algunos cursos pueden durar semanas, mientras que otros pueden ser más cortos. Consulta la descripción de cada curso para obtener información detallada sobre la duración y la estructura del curso."
+        },
+        {
+          "question": "¿Los cursos están actualizados con los últimos cambios en los exámenes?",
+          "answer": "Sí, nos esforzamos por mantener nuestros cursos actualizados con los últimos cambios en los exámenes y los requisitos del plan de estudios. Nuestros materiales de estudio se revisan y actualizan regularmente para garantizar su relevancia y precisión."
+        }
+      ]
+    },
+    {
+      "name": "Pagos y Facturación",
+      "faqs": [
+        {
+          "question": "¿Cuáles son los métodos de pago aceptados?",
+          "answer": "Aceptamos una variedad de métodos de pago, incluidas tarjetas de crédito, tarjetas de débito y transferencias bancarias. Puedes seleccionar el método de pago que mejor se adapte a tus necesidades durante el proceso de compra."
+        },
+        {
+          "question": "¿Cómo puedo obtener una factura de mi compra?",
+          "answer": "Una vez completada tu compra, recibirás una factura electrónica en la dirección de correo electrónico proporcionada durante el proceso de pago. Si necesitas una factura adicional o tienes alguna pregunta sobre tu factura, no dudes en ponerte en contacto con nuestro equipo de atención al cliente."
+        },
+        {
+          "question": "¿Ofrecen opciones de pago en cuotas?",
+          "answer": "Sí, ofrecemos opciones de pago en cuotas para algunos de nuestros cursos más largos y costosos. Durante el proceso de compra, tendrás la opción de seleccionar un plan de pago en cuotas si está disponible para el curso que deseas comprar."
+        },
+        {
+          "question": "¿Hay algún cargo adicional por impuestos o tarifas?",
+          "answer": "El precio de nuestros cursos incluye todos los impuestos y tarifas aplicables. No hay cargos adicionales ocultos al realizar una compra en nuestro sitio web. El precio que ves durante el proceso de compra es el precio final que pagarás."
+        },
+        {
+          "question": "¿Cuál es su política de reembolso?",
+          "answer": "Ofrecemos una política de reembolso flexible para garantizar tu satisfacción. Si por alguna razón no estás satisfecho con tu compra, ponte en contacto con nuestro equipo de atención al cliente dentro del período de reembolso especificado para obtener un reembolso completo o parcial según corresponda."
+        }
+      ]
+    },
+    {
+      "name": "Soporte Técnico",
+      "faqs": [
+        {
+          "question": "¿Qué debo hacer si tengo problemas técnicos con un curso?",
+          "answer": "Si experimentas algún problema técnico mientras tomas uno de nuestros cursos, por favor ponte en contacto con nuestro equipo de soporte técnico. Estaremos encantados de ayudarte a resolver cualquier problema técnico que puedas enfrentar y asegurarnos de que puedas continuar con tu estudio sin interrupciones."
+        },
+        {
+          "question": "¿Cómo puedo contactar al soporte técnico?",
+          "answer": "Puedes ponerte en contacto con nuestro equipo de soporte técnico a través de correo electrónico, teléfono o chat en vivo. Nuestros representantes de soporte técnico están disponibles para ayudarte de lunes a viernes de 9 a. m. a 5 p. m. hora local."
+        },
+        {
+          "question": "¿Ofrecen soporte técnico fuera del horario comercial?",
+          "answer": "Nuestro equipo de soporte técnico está disponible durante el horario comercial habitual para atender tus consultas y resolver tus problemas técnicos. Si necesitas asistencia fuera del horario comercial, puedes enviarnos un correo electrónico y te responderemos lo antes posible."
+        },
+        {
+          "question": "¿Cuánto tiempo tarda el equipo de soporte técnico en responder a las consultas?",
+          "answer": "Nos esforzamos por responder a todas las consultas de soporte técnico dentro de un plazo de 24 horas hábiles. Si no recibes una respuesta dentro de este período de tiempo, por favor verifica tu carpeta de correo no deseado o ponte en contacto con nosotros nuevamente para asegurarte de que recibamos tu consulta."
+        },
+        {
+          "question": "¿Qué información debo proporcionar al equipo de soporte técnico?",
+          "answer": "Para ayudarnos a resolver tu problema técnico de manera eficiente, proporciona toda la información relevante, incluidos detalles sobre el curso afectado, el dispositivo y el navegador que estás utilizando, y una descripción detallada del problema que estás experimentando."
+        }
+      ]
+    },
+    {
+      "name": "Políticas y Términos",
+      "faqs": [
+        {
+          "question": "¿Cuáles son sus políticas de privacidad y seguridad?",
+          "answer": "Nos tomamos muy en serio la privacidad y la seguridad de tus datos personales. Consulta nuestra política de privacidad para obtener más información sobre cómo protegemos tus datos y respetamos tu privacidad."
+        },
+        {
+          "question": "¿Cuáles son sus términos y condiciones de uso?",
+          "answer": "Al utilizar nuestro sitio web y nuestros servicios, aceptas nuestros términos y condiciones de uso. Te recomendamos que leas detenidamente estos términos antes de utilizar nuestros servicios."
+        },
+        {
+          "question": "¿Cómo puedo cancelar mi suscripción o cuenta?",
+          "answer": "Si deseas cancelar tu suscripción o cerrar tu cuenta, ponte en contacto con nuestro equipo de atención al cliente. Estaremos encantados de ayudarte a cancelar tu suscripción y proporcionarte las instrucciones necesarias para cerrar tu cuenta de manera segura."
+        },
+        {
+          "question": "¿Qué sucede con mis datos personales si cancelo mi suscripción o cierro mi cuenta?",
+          "answer": "Cuando cancelas tu suscripción o cierras tu cuenta, conservamos tus datos personales de acuerdo con nuestra política de retención de datos y privacidad. Consulta nuestra política de privacidad para obtener más información sobre cómo gestionamos tus datos personales."
+        },
+        {
+          "question": "¿Ofrecen algún tipo de garantía de satisfacción?",
+          "answer": "Sí, nos esforzamos por garantizar tu satisfacción con nuestros productos y servicios. Si por alguna razón no estás completamente satisfecho, ponte en contacto con nosotros para que podamos resolver cualquier problema que puedas tener y asegurarnos de que estés satisfecho con tu experiencia."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "partnershipsList": [
+    {
+      "name": "Convenio 1",
+      "description": "description",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/test-variety-e3beb.appspot.com/o/5ykYD.png?alt=media&token=f380a5a9-dafc-4cde-b226-ec783f5e0805",
+      "imageAlt": "Convenio 1"
+    },
+    {
+      "name": "Convenio 2",
+      "description": "description",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/test-variety-e3beb.appspot.com/o/5ykYD.png?alt=media&token=f380a5a9-dafc-4cde-b226-ec783f5e0805",
+      "imageAlt": "Convenio 2"
+    },
+    {
+      "name": "Convenio 3",
+      "description": "description",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/test-variety-e3beb.appspot.com/o/5ykYD.png?alt=media&token=f380a5a9-dafc-4cde-b226-ec783f5e0805",
+      "imageAlt": "Convenio 3"
+    },
+    {
+      "name": "Convenio 4",
+      "description": "description",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/test-variety-e3beb.appspot.com/o/5ykYD.png?alt=media&token=f380a5a9-dafc-4cde-b226-ec783f5e0805",
+      "imageAlt": "Convenio 4"
+    },
+    {
+      "name": "Convenio 5",
+      "description": "description",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/test-variety-e3beb.appspot.com/o/5ykYD.png?alt=media&token=f380a5a9-dafc-4cde-b226-ec783f5e0805",
+      "imageAlt": "Convenio 5"
+    }
+  ]
+}
