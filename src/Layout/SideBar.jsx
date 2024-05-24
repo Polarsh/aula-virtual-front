@@ -37,22 +37,29 @@ const navigation = [
     ],
   },
   {
-    name: 'Aprendizaje',
+    name: 'Metodología',
     icon: FolderIcon,
     current: false,
     children: [
-      { name: 'Metodología', href: '/aprendizaje/metodologia' },
-      { name: 'Tendencias', href: '/aprendizaje/tendencias' },
+      { name: 'Nuestra metodología', href: '/metodologia/metodologia' },
+      { name: 'Tendencias', href: '/metodologia/Tendencias' },
     ],
   },
   {
-    name: 'Asesorías',
+    name: 'Mentorías',
     icon: FolderIcon,
     current: false,
     children: [
-      { name: 'Coaching', href: '/asesorias/coaching' },
-      { name: 'Asesorias', href: '/asesorias/asesorias' },
+      { name: 'Coaching', href: '/mentoria/coaching' },
+      { name: 'Asesorias', href: '/mentoria/asesorias' },
+      { name: 'Test Psicológicos', href: '/mentoria/test-psicologicos' },
     ],
+  },
+  {
+    name: 'Cursos',
+    href: '/cursos',
+    icon: ChartPieIcon,
+    current: false,
   },
   {
     name: 'Canales de atención',

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import { useApp } from '../../context/AppContext'
+import { useApp } from '../../../context/AppContext'
 
-export default function MyCoursesPage() {
+export default function CoursesPage() {
   const { coursesList } = useApp()
 
   return (

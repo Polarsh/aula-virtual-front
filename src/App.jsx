@@ -1,13 +1,15 @@
-import { Route, Routes, useLocation } from 'react-router-dom'
-import { AppProvider } from './context/AppContext'
-import PageLayout from './Layout/PageLayout'
-import HomePage from './pages/videoteca/Home'
-import ErrorPage from './pages/Error'
 import { useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import LoginPage from './pages/Sign/Login'
 import SignUpPage from './pages/Sign/SignUp'
-import MyCoursesPage from './pages/videoteca/MyCourses'
-import MaterialPage from './pages/videoteca/materials'
+import PageLayout from './Layout/PageLayout'
+import HomePage from './pages/Home'
+import CoursesPage from './pages/modules/Course/Courses'
+import MaterialPage from './pages/modules/videoteca/Materials'
+import ErrorPage from './pages/Error'
+import { AppProvider } from './context/AppContext'
+import MyClassesPage from './pages/modules/videoteca/MyClasses/MyClasses'
+import MyClassPage from './pages/modules/videoteca/MyClasses/MyClass'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -31,7 +33,9 @@ export default function App() {
         <Route path='/' element={<PageLayout />}>
           <Route index element={<HomePage />} />
           <Route path='*' element={<HomePage />} />
-          <Route path='videoteca/mis-clases' element={<MyCoursesPage />} />
+          <Route path='cursos' element={<CoursesPage />} />
+          <Route path='videoteca/mis-clases' element={<MyClassesPage />} />
+          <Route path='videoteca/mis-clases/:id' element={<MyClassPage />} />
           <Route path='videoteca/materiales' element={<MaterialPage />} />
         </Route>
       </Routes>
