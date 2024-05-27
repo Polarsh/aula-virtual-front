@@ -10,6 +10,7 @@ import ErrorPage from './pages/Error'
 import { AppProvider } from './context/AppContext'
 import MyClassesPage from './pages/modules/videoteca/MyClasses/MyClasses'
 import MyClassPage from './pages/modules/videoteca/MyClasses/MyClass'
+import SchedulePage from './pages/modules/videoteca/Schedule/Schedule'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -36,6 +37,7 @@ export default function App() {
           <Route path='cursos' element={<CoursesPage />} />
           <Route path='videoteca/mis-clases' element={<MyClassesPage />} />
           <Route path='videoteca/mis-clases/:id' element={<MyClassPage />} />
+          <Route path='videoteca/cronograma' element={<SchedulePage />} />
           <Route path='videoteca/materiales' element={<MaterialPage />} />
         </Route>
       </Routes>
