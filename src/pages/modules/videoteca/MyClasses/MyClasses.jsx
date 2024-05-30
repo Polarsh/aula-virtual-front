@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import CardComponent from '../../../../components/Card'
 
 const classList = [
   {
@@ -75,8 +76,8 @@ const classList = [
 
 export default function MyClassesPage() {
   return (
-    <div className='shadow border rounded-md'>
-      <div className='mx-auto px-5 py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 text-base leading-7 lg:mx-0 lg:max-w-none'>
+    <CardComponent>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 text-base'>
         {classList.map((course, index) => (
           <Link
             key={'/videoteca/mis-clases/' + course.name}
@@ -99,6 +100,6 @@ export default function MyClassesPage() {
           </Link>
         ))}
       </div>
-    </div>
+    </CardComponent>
   )
 }

@@ -1,0 +1,172 @@
+{
+  "id": 1,
+  "title": "SIMULACRO ENAM 2023 - OCT 22 - CONVENIO UAC - PARTE A",
+  "questions": [
+    {
+      "index": 1,
+      "title": "¿Cuál es la molécula portadora de la información genética?",
+      "image": "https://camarasal.com/wp-content/uploads/2020/08/default-image-5-1.jpg",
+      "status": "Correcto",
+      "selectedOption": { "id": "b", "label": "ADN" },
+      "correctOption": { "id": "b", "label": "ADN" },
+      "options": [
+        { "id": "a", "label": "ARN" },
+        { "id": "b", "label": "ADN" },
+        { "id": "c", "label": "Proteína" }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "¿Qué orgánulo celular es responsable de la fotosíntesis?",
+      "image": null,
+      "status": "Incorrecto",
+      "selectedOption": { "id": "c", "label": "Mitocondria" },
+      "correctOption": { "id": "b", "label": "Cloroplasto" },
+      "options": [
+        { "id": "a", "label": "Núcleo" },
+        { "id": "b", "label": "Cloroplasto" },
+        { "id": "c", "label": "Mitocondria" }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "¿Qué tipo de célula carece de núcleo?",
+      "image": "https://camarasal.com/wp-content/uploads/2020/08/default-image-5-1.jpg",
+      "status": "No marcado",
+      "selectedOption": null,
+      "correctOption": { "id": "b", "label": "Procariota" },
+      "options": [
+        { "id": "a", "label": "Eucariota" },
+        { "id": "b", "label": "Procariota" },
+        { "id": "c", "label": "Neurona" }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "¿Cuál es el principal componente de la pared celular en plantas?",
+      "image": null,
+      "status": "Correcto",
+      "selectedOption": { "id": "c", "label": "Celulosa" },
+      "correctOption": { "id": "c", "label": "Celulosa" },
+      "options": [
+        { "id": "a", "label": "Quitina" },
+        { "id": "b", "label": "Glucógeno" },
+        { "id": "c", "label": "Celulosa" }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "¿Cómo se llama el proceso por el cual las plantas producen su propio alimento?",
+      "image": "https://camarasal.com/wp-content/uploads/2020/08/default-image-5-1.jpg",
+      "status": "Incorrecto",
+      "selectedOption": { "id": "a", "label": "Respiración" },
+      "correctOption": { "id": "b", "label": "Fotosíntesis" },
+      "options": [
+        { "id": "a", "label": "Respiración" },
+        { "id": "b", "label": "Fotosíntesis" },
+        { "id": "c", "label": "Fermentación" }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "¿Cuál es el producto final de la fotosíntesis?",
+      "image": null,
+      "status": "No marcado",
+      "selectedOption": null,
+      "correctOption": { "id": "a", "label": "Glucosa" },
+      "options": [
+        { "id": "a", "label": "Glucosa" },
+        { "id": "b", "label": "Oxígeno" },
+        { "id": "c", "label": "Dióxido de carbono" }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "¿Cuál es el principal órgano de la respiración en los seres humanos?",
+      "image": "https://camarasal.com/wp-content/uploads/2020/08/default-image-5-1.jpg",
+      "status": "Correcto",
+      "selectedOption": { "id": "b", "label": "Pulmones" },
+      "correctOption": { "id": "b", "label": "Pulmones" },
+      "options": [
+        { "id": "a", "label": "Corazón" },
+        { "id": "b", "label": "Pulmones" },
+        { "id": "c", "label": "Riñones" }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "¿Qué elemento es esencial para la síntesis de hemoglobina?",
+      "image": null,
+      "status": "Incorrecto",
+      "selectedOption": { "id": "a", "label": "Calcio" },
+      "correctOption": { "id": "b", "label": "Hierro" },
+      "options": [
+        { "id": "a", "label": "Calcio" },
+        { "id": "b", "label": "Hierro" },
+        { "id": "c", "label": "Sodio" }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "¿Cuál es la función principal de los ribosomas?",
+      "image": "https://camarasal.com/wp-content/uploads/2020/08/default-image-5-1.jpg",
+      "status": "No marcado",
+      "selectedOption": null,
+      "correctOption": { "id": "a", "label": "Síntesis de proteínas" },
+      "options": [
+        { "id": "a", "label": "Síntesis de proteínas" },
+        { "id": "b", "label": "Producción de energía" },
+        { "id": "c", "label": "Digestión celular" }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "¿Cuál es el órgano que filtra la sangre para formar la orina?",
+      "image": null,
+      "status": "Correcto",
+      "selectedOption": { "id": "c", "label": "Riñones" },
+      "correctOption": { "id": "c", "label": "Riñones" },
+      "options": [
+        { "id": "a", "label": "Hígado" },
+        { "id": "b", "label": "Pulmones" },
+        { "id": "c", "label": "Riñones" }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "¿Qué tipo de células realizan la fagocitosis?",
+      "image": "https://camarasal.com/wp-content/uploads/2020/08/default-image-5-1.jpg",
+      "status": "Incorrecto",
+      "selectedOption": { "id": "c", "label": "Eritrocitos" },
+      "correctOption": { "id": "b", "label": "Macrófagos" },
+      "options": [
+        { "id": "a", "label": "Neurona" },
+        { "id": "b", "label": "Macrófagos" },
+        { "id": "c", "label": "Eritrocitos" }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "¿Qué estructura celular controla el paso de sustancias entre la célula y su entorno?",
+      "image": null,
+      "status": "No marcado",
+      "selectedOption": null,
+      "correctOption": { "id": "b", "label": "Membrana plasmática" },
+      "options": [
+        { "id": "a", "label": "Pared celular" },
+        { "id": "b", "label": "Membrana plasmática" },
+        { "id": "c", "label": "Citoplasma" }
+      ]
+    }
+  ],
+  "examStats": {
+    "totalQuestions": 12,
+    "answeredQuestions": 8,
+    "unansweredQuestions": 4,
+    "correctAnswers": 4,
+    "incorrectAnswers": 4,
+    "timeUsed": 10700,
+    "gradeObtained": 6.67
+  },
+  "duration": 10800
+}

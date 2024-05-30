@@ -11,6 +11,10 @@ import { AppProvider } from './context/AppContext'
 import MyClassesPage from './pages/modules/videoteca/MyClasses/MyClasses'
 import MyClassPage from './pages/modules/videoteca/MyClasses/MyClass'
 import SchedulePage from './pages/modules/videoteca/Schedule/Schedule'
+import MockMenu from './pages/modules/Evaluation/Mock/MocksMenu'
+import InstructionsPage from './pages/modules/Evaluation/Mock/Instructions'
+import MockExamPage from './pages/modules/Evaluation/Mock/MockExam'
+import ResultMockExamPage from './pages/modules/Evaluation/Mock/Results'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -39,6 +43,19 @@ export default function App() {
           <Route path='videoteca/mis-clases/:id' element={<MyClassPage />} />
           <Route path='videoteca/cronograma' element={<SchedulePage />} />
           <Route path='videoteca/materiales' element={<MaterialPage />} />
+
+          <Route path='evaluaciones/simulacros/'>
+            <Route index element={<MockMenu />} />
+            <Route path=':mockId/resultados' element={<ResultMockExamPage />} />
+            <Route
+              path=':mockId/instrucciones'
+              element={<InstructionsPage />}
+            />
+            <Route
+              path=':mockId/pregunta/:questionIndex'
+              element={<MockExamPage />}
+            />
+          </Route>
         </Route>
       </Routes>
     </AppProvider>
