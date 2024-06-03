@@ -2,32 +2,31 @@ import { useNavigate } from 'react-router-dom'
 import SquareButtonComponent from '../../../../../components/Buttons/SquareButton'
 import CardComponent from '../../../../../components/Card/Card'
 
-export default function QuestionPanelMockExamComponent({ mockExamData }) {
+export default function QuestionPanelExamComponent({ urlType, examData }) {
   const navigate = useNavigate()
 
   const goToSpecificQuestion = index => {
-    navigate(`/evaluaciones/simulacros/${mockExamData.id}/pregunta/${index}`)
+    navigate(`/evaluaciones/${urlType}/${examData.id}/pregunta/${index}`)
   }
 
   const panels = [
     {
       color: 'blue',
       text: 'Total',
-      value: mockExamData.questions.length,
+      value: examData.questions.length,
     },
     {
       color: 'green',
       text: 'Respondidas',
-      value: mockExamData.questions.filter(question => question.selectedOption)
+      value: examData.questions.filter(question => question.selectedOption)
         .length,
     },
     {
       color: 'red',
       text: 'Pendientes',
       value:
-        mockExamData.questions.length -
-        mockExamData.questions.filter(question => question.selectedOption)
-          .length,
+        examData.questions.length -
+        examData.questions.filter(question => question.selectedOption).length,
     },
   ]
 
@@ -53,14 +52,12 @@ export default function QuestionPanelMockExamComponent({ mockExamData }) {
       </div>
       {/* Botones */}
       <div className='grid grid-cols-8 md:grid-cols-6 gap-y-2 gap-x-2'>
-        {[...Array(mockExamData.questions.length)].map((_, index) => (
+        {[...Array(examData.questions.length)].map((_, index) => (
           <SquareButtonComponent
             key={'Boton pregunta ' + index}
             label={String(index + 1)}
             onClick={() => goToSpecificQuestion(index + 1)}
-            color={
-              mockExamData.questions[index].selectedOption ? 'green' : 'red'
-            }
+            color={examData.questions[index].selectedOption ? 'green' : 'red'}
           />
         ))}
       </div>

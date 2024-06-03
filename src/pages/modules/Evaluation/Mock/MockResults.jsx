@@ -1,11 +1,11 @@
 import { Fragment, useState } from 'react'
 import CardComponent from '../../../../components/Card/Card'
-import GraphResultMockExamComponent from './Result/Graph'
-import TableResultMockExamComponent from './Result/Table'
 
 import mockExamResultsJson from '../../../../json/responses/mockExamResults.json'
 import { formatTime, getCardStyleByStatus } from '../../../../utils/utils'
-import ViewQuestionModalComponent from './Result/viewQuestionModal'
+import ViewQuestionModalComponent from '../Shared/Result/viewQuestionModal'
+import GraphResultExamComponent from '../Shared/Result/Graph'
+import TableResultExamComponent from '../Shared/Result/Table'
 
 export default function ResultMockExamPage() {
   const [mockExamData] = useState(mockExamResultsJson)
@@ -101,7 +101,7 @@ export default function ResultMockExamPage() {
               <div className='mb-5 font-bold text-xl'>
                 Estadísticas de respuestas
               </div>
-              <GraphResultMockExamComponent
+              <GraphResultExamComponent
                 totalQuestions={mockExamData.examStats.totalQuestions}
                 answeredQuestions={mockExamData.examStats.answeredQuestions}
                 unansweredQuestions={mockExamData.examStats.unansweredQuestions}
@@ -154,7 +154,7 @@ export default function ResultMockExamPage() {
         {/* Tabla */}
         <CardComponent>
           <div className='mb-5 font-bold text-xl'>Tabla de preguntas</div>
-          <TableResultMockExamComponent
+          <TableResultExamComponent
             questions={mockExamData.questions}
             handleSelectedQuestion={handleSelectedQuestion}
           />

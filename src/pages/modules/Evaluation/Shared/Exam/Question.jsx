@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export default function QuestionMockExamComponent({
-  question,
-  onSelectOption,
-}) {
+export default function QuestionExamComponent({ question, onSelectOption }) {
   const [selectedOption, setSelectedOption] = useState(
     question ? question.selectedOption : ''
   )

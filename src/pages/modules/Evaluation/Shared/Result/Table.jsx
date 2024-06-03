@@ -6,7 +6,7 @@ import {
 import { Fragment, useState } from 'react'
 import { getCardStyleByStatus } from '../../../../../utils/utils'
 
-export default function TableResultMockExamComponent({
+export default function TableResultExamComponent({
   questions,
   handleSelectedQuestion,
 }) {

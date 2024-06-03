@@ -1,8 +1,9 @@
 import { useNavigate } from 'react-router-dom'
 import ButtonComponent from '../../../../../components/Buttons/Buttons'
 
-export default function ButtonsMockExamComponent({
-  mockExamData,
+export default function ButtonsExamComponent({
+  urlType,
+  examData,
   questionIndex,
   handleFinishMock,
 }) {
@@ -13,22 +14,20 @@ export default function ButtonsMockExamComponent({
     const previousId = parseInt(questionIndex, 10) - 1
     if (previousId > 0) {
       // Asegúrate de que no sea menor que 1
-      navigate(
-        `/evaluaciones/simulacros/${mockExamData.id}/pregunta/${previousId}`
-      )
+      navigate(`/evaluaciones/${urlType}/${examData.id}/pregunta/${previousId}`)
     }
   }
 
   // Función para ir a la siguiente pregunta
   const goToNextQuestion = () => {
     const nextId = parseInt(questionIndex, 10) + 1
-    navigate(`/evaluaciones/simulacros/${mockExamData.id}/pregunta/${nextId}`)
+    navigate(`/evaluaciones/${urlType}/${examData.id}/pregunta/${nextId}`)
   }
 
   // Determina si el índice de la pregunta es 1 o igual al total de preguntas
   const isFirstQuestion = parseInt(questionIndex, 10) === 1
   const isLastQuestion =
-    parseInt(questionIndex, 10) === mockExamData.questions.length
+    parseInt(questionIndex, 10) === examData.questions.length
 
   return (
     <>
