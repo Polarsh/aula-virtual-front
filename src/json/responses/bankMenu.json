@@ -1,0 +1,22 @@
+{
+  "banks": [
+    {
+      "id": 1,
+      "title": "Banco de preguntas 1",
+      "totalQuestion": 180,
+      "duration": 180
+    },
+    {
+      "id": 2,
+      "title": "Banco de preguntas 2",
+      "totalQuestion": 120,
+      "duration": 90
+    },
+    {
+      "id": 3,
+      "title": "Banco de preguntas 3",
+      "totalQuestion": 150,
+      "duration": 120
+    }
+  ]
+}

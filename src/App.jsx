@@ -11,10 +11,14 @@ import { AppProvider } from './context/AppContext'
 import MyClassesPage from './pages/modules/videoteca/MyClasses/MyClasses'
 import MyClassPage from './pages/modules/videoteca/MyClasses/MyClass'
 import SchedulePage from './pages/modules/videoteca/Schedule/Schedule'
-import MockMenu from './pages/modules/Evaluation/Mock/MocksMenu'
-import InstructionsPage from './pages/modules/Evaluation/Mock/Instructions'
+
+import BankMenu from './pages/modules/Evaluation/Bank/BankMenu'
+
+import MockMenu from './pages/modules/Evaluation/Mock/MockMenu'
+import MockInstructionsPage from './pages/modules/Evaluation/Mock/MockInstructions'
 import MockExamPage from './pages/modules/Evaluation/Mock/MockExam'
-import ResultMockExamPage from './pages/modules/Evaluation/Mock/Results'
+import ResultMockExamPage from './pages/modules/Evaluation/Mock/MockResults'
+import BankInstructionsPage from './pages/modules/Evaluation/Bank/BankInstructions'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -49,10 +53,19 @@ export default function App() {
             <Route path=':mockId/resultados' element={<ResultMockExamPage />} />
             <Route
               path=':mockId/instrucciones'
-              element={<InstructionsPage />}
+              element={<MockInstructionsPage />}
             />
             <Route
               path=':mockId/pregunta/:questionIndex'
+              element={<MockExamPage />}
+            />
+          </Route>
+          <Route path='evaluaciones/banqueo/'>
+            <Route index element={<BankMenu />} />
+            <Route path='instrucciones' element={<BankInstructionsPage />} />
+            <Route path=':bankId/resultados' element={<ResultMockExamPage />} />
+            <Route
+              path=':bankId/pregunta/:questionIndex'
               element={<MockExamPage />}
             />
           </Route>

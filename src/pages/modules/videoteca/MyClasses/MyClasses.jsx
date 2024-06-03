@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import CardComponent from '../../../../components/Card'
+import CardComponent from '../../../../components/Card/Card'
 
 const classList = [
   {

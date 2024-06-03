@@ -60,7 +60,7 @@ export default function QuestionMockExamComponent({
                 <label
                   htmlFor={option.id}
                   className='font-medium text-gray-900'>
-                  {option.name}
+                  {option.label}
                 </label>
               </div>
             </div>

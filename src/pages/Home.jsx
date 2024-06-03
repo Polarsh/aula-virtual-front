@@ -1,4 +1,4 @@
-import CardComponent from '../components/Card'
+import CardComponent from '../components/Card/Card'
 import VideoSliderComponent from '../components/Sliders/VideoSlider'
 
 const moduleDescriptions = {

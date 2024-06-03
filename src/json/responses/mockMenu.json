@@ -1,0 +1,22 @@
+{
+  "mocks": [
+    {
+      "id": 1,
+      "title": "SIMULACRO ENAM 2023 - OCT 22 - CONVENIO UAC - PARTE A",
+      "totalQuestion": 180,
+      "duration": 180
+    },
+    {
+      "id": 2,
+      "title": "SIMULACRO ENAM 2023 - OCT 16 - CONVENIO UAC",
+      "totalQuestion": 120,
+      "duration": 90
+    },
+    {
+      "id": 3,
+      "title": " SIMULACRO ESSALUD 16 OCT - CONVENIO UAC",
+      "totalQuestion": 150,
+      "duration": 120
+    }
+  ]
+}

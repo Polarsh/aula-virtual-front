@@ -1,5 +1,5 @@
 import { DocumentArrowDownIcon, PlayIcon } from '@heroicons/react/24/outline'
-import CardComponent from '../../../../components/Card'
+import CardComponent from '../../../../components/Card/Card'
 import ButtonComponent from '../../../../components/Buttons/Buttons'
 import { useNavigate } from 'react-router-dom'
 
@@ -68,72 +68,63 @@ const specificInstructions = [
   },
 ]
 
-export default function InstructionsPage() {
-  const renderInstruction = instruction => {
-    const { text, bold } = instruction
+const renderInstruction = instruction => {
+  const { text, bold } = instruction
 
-    // Split the text by the bold parts
-    const parts = text.split(new RegExp(`(${bold.join('|')})`, 'g'))
+  // Split the text by the bold parts
+  const parts = text.split(new RegExp(`(${bold.join('|')})`, 'g'))
 
-    return parts.map((part, index) =>
-      bold.includes(part) ? (
-        <span key={index} className='font-bold'>
-          {part}
-        </span>
-      ) : (
-        <span key={index}>{part}</span>
-      )
+  return parts.map((part, index) =>
+    bold.includes(part) ? (
+      <span key={index} className='font-bold'>
+        {part}
+      </span>
+    ) : (
+      <span key={index}>{part}</span>
     )
-  }
+  )
+}
 
+export default function MockInstructionsPage() {
   const navigate = useNavigate()
 
-  const handleStarMockExam = () => {
+  const handleStartMockExam = () => {
     navigate(`/evaluaciones/simulacros/1/pregunta/1`)
   }
 
+  const renderInstructionList = instructions => (
+    <ul className='list-disc pl-5'>
+      {instructions.map((instruction, index) => (
+        <li key={index} className='mb-2 text-sm text-justify'>
+          {renderInstruction(instruction)}
+        </li>
+      ))}
+    </ul>
+  )
+
   return (
-    <div className=' space-y-8'>
-      {/* Titulo */}
+    <div className='space-y-8'>
       <h2 className='text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-2xl sm:tracking-tight'>
         SIMULACRO ENAM 2023 - OCT 22 - CONVENIO UAC - PARTE A
       </h2>
-      {/* Contenido */}
-      <div className=' grid grid-cols-1 md:grid-cols-2 gap-5'>
+
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
         <CardComponent>
           <div className='mb-5 font-bold text-xl'>Instrucciones generales</div>
-          <div>
-            <ul className='list-disc pl-5'>
-              {generalInstructions.map((instruction, index) => (
-                <li key={index} className='mb-2 text-sm text-justify'>
-                  {renderInstruction(instruction)}
-                </li>
-              ))}
-            </ul>
-          </div>
+          {renderInstructionList(generalInstructions)}
         </CardComponent>
 
         <CardComponent>
-          {/* Titulo */}
           <div className='mb-5 font-bold text-xl'>
             Instrucciones específicas
           </div>
-          {/* Texto */}
-          <div>
-            <ul className='list-disc pl-5'>
-              {specificInstructions.map((instruction, index) => (
-                <li key={index} className='mb-2 text-sm text-justify'>
-                  {renderInstruction(instruction)}
-                </li>
-              ))}
-            </ul>
-          </div>
-          {/* Botones */}
-          <div className='mt-8 flex-grow flex flex-col justify-center space-y-4'>
+          {renderInstructionList(specificInstructions)}
+
+          <div className='mt-8 flex flex-col space-y-4'>
             <ButtonComponent
               label='Empezar'
               icon={PlayIcon}
-              onClick={() => handleStarMockExam()}
+              onClick={handleStartMockExam}
               bgColor='bg-my-primary'
               hoverColor='bg-my-secondary'
             />

@@ -12,7 +12,7 @@ import {
   addMonths,
 } from 'date-fns'
 import { es } from 'date-fns/locale' // Importar localización en español
-import CardComponent from '../../../../components/Card'
+import CardComponent from '../../../../components/Card/Card'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 
 export default function SchedulePage() {

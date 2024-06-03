@@ -1,5 +1,5 @@
 import { Fragment, useState } from 'react'
-import CardComponent from '../../../../components/Card'
+import CardComponent from '../../../../components/Card/Card'
 import GraphResultMockExamComponent from './Result/Graph'
 import TableResultMockExamComponent from './Result/Table'
 

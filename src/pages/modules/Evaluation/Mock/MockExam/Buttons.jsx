@@ -13,20 +13,22 @@ export default function ButtonsMockExamComponent({
     const previousId = parseInt(questionIndex, 10) - 1
     if (previousId > 0) {
       // Asegúrate de que no sea menor que 1
-      navigate(`/evaluaciones/simulacros/${mockExamData.id}/${previousId}`)
+      navigate(
+        `/evaluaciones/simulacros/${mockExamData.id}/pregunta/${previousId}`
+      )
     }
   }
 
   // Función para ir a la siguiente pregunta
   const goToNextQuestion = () => {
     const nextId = parseInt(questionIndex, 10) + 1
-    navigate(`/evaluaciones/simulacros/${mockExamData.id}/${nextId}`)
+    navigate(`/evaluaciones/simulacros/${mockExamData.id}/pregunta/${nextId}`)
   }
 
   // Determina si el índice de la pregunta es 1 o igual al total de preguntas
   const isFirstQuestion = parseInt(questionIndex, 10) === 1
   const isLastQuestion =
-    parseInt(questionIndex, 10) === mockExamData.questionsData.totalQuestion
+    parseInt(questionIndex, 10) === mockExamData.questions.length
 
   return (
     <>

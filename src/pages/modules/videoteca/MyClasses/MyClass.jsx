@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import CardComponent from '../../../../components/Card'
+import CardComponent from '../../../../components/Card/Card'
 import YouTubePlayer from '../../../../components/Players/YoutubePlayer'
 
 const topicList = [
