@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import CardComponent from '../../../../components/Card/Card'
-import mockMenuJson from '../../../../json/responses/mockMenu.json'
+import mockMenuJson from '../../../../json/responses/evaluations/mock/mockMenu.json'
+
 import { useState } from 'react'
 
 const MockMenuTable = ({ mocks, onGoToInstructions, onGoToResults }) => (

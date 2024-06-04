@@ -14,6 +14,7 @@ import {
 import { es } from 'date-fns/locale' // Importar localización en español
 import CardComponent from '../../../../components/Card/Card'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
+import { capitalizeFirstLetter } from '../../../../utils/utils'
 
 export default function SchedulePage() {
   const [currentMonth, setCurrentMonth] = useState(new Date())
@@ -29,22 +30,24 @@ export default function SchedulePage() {
 
     return (
       <div className='flex justify-between items-center mb-8'>
-        <div className='flex bg-blue-200'>
+        <div className='flex'>
           <button
             type='button'
             onClick={prevMonth}
             className='mr-4 flex flex-none items-center justify-center text-gray-400 hover:text-gray-500'>
-            <span className='sr-only'>Previous month</span>
+            <span className='sr-only'>Mes anterior</span>
             <ChevronLeftIcon className='h-5 w-5' aria-hidden='true' />
           </button>
           <span className='text-lg flex-auto font-semibold'>
-            {format(currentMonth, dateFormat, { locale: es })}
+            {capitalizeFirstLetter(
+              format(currentMonth, dateFormat, { locale: es })
+            )}
           </span>
           <button
             type='button'
             onClick={nextMonth}
             className='ml-4 flex flex-none items-center justify-center text-gray-400 hover:text-gray-500'>
-            <span className='sr-only'>Next month</span>
+            <span className='sr-only'>Mes siguiente</span>
             <ChevronRightIcon className='h-5 w-5' aria-hidden='true' />
           </button>
         </div>
@@ -61,12 +64,11 @@ export default function SchedulePage() {
         <div className='grid grid-cols-7 gap-px text-center text-xs font-semibold leading-6 text-gray-700 lg:flex-none'>
           {Array.from({ length: 7 }).map((_, index) => {
             const day = addDays(startDate, index)
-            console.log(day)
             return (
               <div
                 key={index}
                 className='ring-1 ring-gray-200 text-center font-bold bg-white py-2'>
-                {format(day, dateFormat, { locale: es })}
+                {capitalizeFirstLetter(format(day, dateFormat, { locale: es }))}
               </div>
             )
           })}

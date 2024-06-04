@@ -53,3 +53,7 @@ export const formatTime = totalSeconds => {
     seconds.toString().padStart(2, '0'),
   ].join(':')
 }
+
+export const capitalizeFirstLetter = string => {
+  return string.charAt(0).toUpperCase() + string.slice(1)
+}

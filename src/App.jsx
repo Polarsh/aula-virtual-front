@@ -19,6 +19,8 @@ import MockInstructionsPage from './pages/modules/Evaluation/Mock/MockInstructio
 import MockExamPage from './pages/modules/Evaluation/Mock/MockExam'
 import ResultMockExamPage from './pages/modules/Evaluation/Mock/MockResults'
 import BankInstructionsPage from './pages/modules/Evaluation/Bank/BankInstructions'
+import ResultBankExamPage from './pages/modules/Evaluation/Bank/BankResults'
+import BankExamPage from './pages/modules/Evaluation/Bank/BankExam'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -63,10 +65,10 @@ export default function App() {
           <Route path='evaluaciones/banqueo/'>
             <Route index element={<BankMenu />} />
             <Route path='instrucciones' element={<BankInstructionsPage />} />
-            <Route path=':bankId/resultados' element={<ResultMockExamPage />} />
+            <Route path=':bankId/resultados' element={<ResultBankExamPage />} />
             <Route
               path=':bankId/pregunta/:questionIndex'
-              element={<MockExamPage />}
+              element={<BankExamPage />}
             />
           </Route>
         </Route>

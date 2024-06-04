@@ -1,15 +1,15 @@
 import { Fragment, useState } from 'react'
 import CardComponent from '../../../../components/Card/Card'
 
-import mockExamResultsJson from '../../../../json/responses/evaluations/mock/mockExamResults.json'
+import bankExamResultsJson from '../../../../json/responses/evaluations/bank/bankExamResult.json'
 
 import { formatTime, getCardStyleByStatus } from '../../../../utils/utils'
 import ViewQuestionModalComponent from '../Shared/Result/viewQuestionModal'
 import GraphResultExamComponent from '../Shared/Result/Graph'
 import TableResultExamComponent from '../Shared/Result/Table'
 
-export default function ResultMockExamPage() {
-  const [mockExamData] = useState(mockExamResultsJson)
+export default function ResultBankExamPage() {
+  const [examData] = useState(bankExamResultsJson)
 
   const [selectedQuestion, setSelectedQuestion] = useState(null)
 
@@ -17,27 +17,27 @@ export default function ResultMockExamPage() {
     {
       color: 'blue-800',
       title: 'Total de preguntas',
-      value: mockExamData.examStats.totalQuestions,
+      value: examData.examStats.totalQuestions,
     },
     {
       color: 'blue-400',
       title: 'Preguntas respondidas',
-      value: mockExamData.examStats.answeredQuestions,
+      value: examData.examStats.answeredQuestions,
     },
     {
       color: 'yellow-500',
       title: 'Preguntas sin responder',
-      value: mockExamData.examStats.unansweredQuestions,
+      value: examData.examStats.unansweredQuestions,
     },
     {
       color: 'green-500',
       title: 'Preguntas correctas',
-      value: mockExamData.examStats.correctAnswers,
+      value: examData.examStats.correctAnswers,
     },
     {
       color: 'red-500',
       title: 'Preguntas incorrectas',
-      value: mockExamData.examStats.incorrectAnswers,
+      value: examData.examStats.incorrectAnswers,
     },
   ]
 
@@ -52,7 +52,7 @@ export default function ResultMockExamPage() {
         <div className='md:flex md:items-center md:justify-between md:space-x-5'>
           <div className='flex flex-col items-start'>
             <h1 className='text-2xl font-bold text-gray-900'>
-              {mockExamData.title}
+              {examData.title}
             </h1>
             <p className='text-sm font-medium text-gray-500'>
               Resultados de simulacro
@@ -65,33 +65,36 @@ export default function ResultMockExamPage() {
             <Fragment>
               <div className='text-lg font-semibold'>Preguntas marcadas</div>
               <div className='text-2xl font-bold text-blue-600'>
-                {mockExamData.examStats.answeredQuestions}
+                {examData.examStats.answeredQuestions}
               </div>
               <div className='text-sm text-gray-500'>
-                de {mockExamData.examStats.totalQuestions}
+                de {examData.examStats.totalQuestions}
               </div>
             </Fragment>
           </CardComponent>
           <CardComponent>
             <div className='text-lg font-semibold'>Preguntas correctas</div>
             <div className='text-2xl font-bold text-green-600'>
-              {mockExamData.examStats.correctAnswers}
+              {examData.examStats.correctAnswers}
             </div>
             <div className='text-sm text-gray-500'>
-              de {mockExamData.examStats.answeredQuestions}
+              de {examData.examStats.answeredQuestions}
             </div>
           </CardComponent>
           <CardComponent>
             <div className='text-lg font-semibold'>Nota obtenida</div>
             <div className='text-2xl font-bold text-purple-600'>
-              {mockExamData.examStats.gradeObtained}
+              {examData.examStats.gradeObtained}
             </div>
             <div className='text-sm text-gray-500'>de 20</div>
           </CardComponent>
           <CardComponent>
             <div className='text-lg font-semibold'>Tiempo utilizado</div>
             <div className='text-2xl font-bold text-red-600'>
-              {formatTime(mockExamData.examStats.timeUsed)}
+              {formatTime(examData.examStats.timeUsed)}
+            </div>
+            <div className='text-sm text-gray-500'>
+              de {formatTime(examData.duration)}
             </div>
           </CardComponent>
         </div>
@@ -103,11 +106,11 @@ export default function ResultMockExamPage() {
                 Estadísticas de respuestas
               </div>
               <GraphResultExamComponent
-                totalQuestions={mockExamData.examStats.totalQuestions}
-                answeredQuestions={mockExamData.examStats.answeredQuestions}
-                unansweredQuestions={mockExamData.examStats.unansweredQuestions}
-                correctAnswers={mockExamData.examStats.correctAnswers}
-                incorrectAnswers={mockExamData.examStats.incorrectAnswers}
+                totalQuestions={examData.examStats.totalQuestions}
+                answeredQuestions={examData.examStats.answeredQuestions}
+                unansweredQuestions={examData.examStats.unansweredQuestions}
+                correctAnswers={examData.examStats.correctAnswers}
+                incorrectAnswers={examData.examStats.incorrectAnswers}
               />
             </div>
           </CardComponent>
@@ -139,14 +142,14 @@ export default function ResultMockExamPage() {
           <div className='mb-5 font-bold text-xl'>Detalle de preguntas</div>
           {/* Botones */}
           <div className='grid grid-cols-8 md:grid-cols-12 gap-y-2 gap-x-2'>
-            {[...Array(mockExamData.questions.length)].map((_, index) => (
+            {[...Array(examData.questions.length)].map((_, index) => (
               <button
                 key={index}
                 type='button'
                 onClick={() => {
-                  handleSelectedQuestion(mockExamData.questions[index])
+                  handleSelectedQuestion(examData.questions[index])
                 }}
-                className={`${getCardStyleByStatus(mockExamData.questions[index].status)} rounded px-2 py-1 text-xs font-semibold shadow-sm ring-1 ring-inset`}>
+                className={`${getCardStyleByStatus(examData.questions[index].status)} rounded px-2 py-1 text-xs font-semibold shadow-sm ring-1 ring-inset`}>
                 {index + 1}
               </button>
             ))}
@@ -156,7 +159,7 @@ export default function ResultMockExamPage() {
         <CardComponent>
           <div className='mb-5 font-bold text-xl'>Tabla de preguntas</div>
           <TableResultExamComponent
-            questions={mockExamData.questions}
+            questions={examData.questions}
             handleSelectedQuestion={handleSelectedQuestion}
           />
         </CardComponent>

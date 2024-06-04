@@ -5,7 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import CountdownTimerComponent from '../../../../components/CountdownTimer'
 import ConfirmSubmitModal from '../../../../components/Modal/ConfirmModal'
 
-import mockExamJson from '../../../../json/responses/mockExam.json'
+import mockExamJson from '../../../../json/responses/evaluations/mock/mockExam.json'
 import QuestionExamComponent from '../Shared/Exam/Question'
 import ButtonsExamComponent from '../Shared/Exam/Buttons'
 import QuestionPanelExamComponent from '../Shared/Exam/QuestionPanel'

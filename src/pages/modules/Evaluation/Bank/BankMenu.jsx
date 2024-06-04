@@ -1,7 +1,9 @@
 import { useNavigate } from 'react-router-dom'
-import CardComponent from '../../../../components/Card/Card'
-import BankMenuJson from '../../../../json/responses/bankMenu.json'
 import { useState } from 'react'
+
+import BankMenuJson from '../../../../json/responses/evaluations/bank/bankMenu.json'
+
+import CardComponent from '../../../../components/Card/Card'
 import HeaderCardComponent from '../../../../components/Card/HeaderCard'
 
 const BankMenuTable = ({ banks, onGoToResults }) => (

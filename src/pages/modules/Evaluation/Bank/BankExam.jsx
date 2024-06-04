@@ -5,7 +5,8 @@ import { useNavigate, useParams } from 'react-router-dom'
 import CountdownTimerComponent from '../../../../components/CountdownTimer'
 import ConfirmSubmitModal from '../../../../components/Modal/ConfirmModal'
 
-import mockExamJson from '../../../../json/responses/mockExam.json'
+import bankExamJson from '../../../../json/responses/evaluations/bank/bankExam.json'
+
 import QuestionExamComponent from '../Shared/Exam/Question'
 import ButtonsExamComponent from '../Shared/Exam/Buttons'
 import QuestionPanelExamComponent from '../Shared/Exam/QuestionPanel'
@@ -14,7 +15,7 @@ export default function BankExamPage() {
   const navigate = useNavigate()
   const { questionIndex } = useParams()
 
-  const [examData, setMockExam] = useState(mockExamJson)
+  const [examData, setMockExam] = useState(bankExamJson)
 
   const [confirmModal, setConfirmModal] = useState(false)
 
