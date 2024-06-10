@@ -115,23 +115,19 @@ export default function HomePage() {
 
       <CardComponent>
         <div className='mb-5 font-bold'>Explicación de módulos</div>
-        <div className='grid grid-cols-2'>
+        <div className='grid grid-cols-2 gap-8'>
           {Object.values(moduleDescriptions).map((module, index) => (
             <div key={index}>
               <div className='mb-3 font-semibold'>Módulo {module.title}</div>
-              <div className='mb-5'>
-                <p className='text-gray-800 text-justify'>
-                  {module.description}
-                </p>
-                <ul className='list-disc list-inside ml-4 text-gray-800 mt-2'>
-                  {module.submodules.map((submodule, index) => (
-                    <li key={index}>
-                      <span className='font-semibold'>{submodule.name}: </span>
-                      {submodule.description}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <p className='text-gray-800 text-justify'>{module.description}</p>
+              <ul className='list-disc list-inside ml-4 text-gray-800 mt-2'>
+                {module.submodules.map((submodule, index) => (
+                  <li key={index}>
+                    <span className='font-semibold'>{submodule.name}: </span>
+                    {submodule.description}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

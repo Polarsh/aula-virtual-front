@@ -24,11 +24,12 @@ const titles = {
   'videoteca/manuales-ebooks': 'Manuales eBooks',
   'evaluaciones/simulacros': 'Simulacros',
   'evaluaciones/banqueo': 'Banco de preguntas',
-  'aprendizaje/metodologia': 'Metodología',
-  'aprendizaje/tendencias': 'Tendencias',
-  'asesorias/coaching': 'Coaching',
-  'asesorias/asesorias': 'Asesorias',
+  'metodologia/metodologia': 'Metodología',
+  'metodologia/tendencias': 'Tendencias',
+  'mentoria/asesorias': 'Asesorias',
+  'mentoria/test-psicologicos': 'Tests Psicológicos',
   'canales-de-atencion': 'Canales de atención',
+  cursos: 'Cursos',
 }
 
 export default function PageLayout() {

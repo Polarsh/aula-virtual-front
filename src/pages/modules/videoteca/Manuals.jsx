@@ -3,31 +3,31 @@ import HeaderCardComponent from '../../../components/Card/HeaderCard'
 import NoContentComponent from '../../../components/NoContent'
 
 const response = [
-  { title: 'Infectología', url: 'https://www.google.com/' },
-  { title: 'Respiratorio', url: 'https://www.google.com/' },
-  { title: 'Cardiología', url: 'https://www.google.com/' },
-  { title: 'Mortalidad', url: 'https://www.google.com/' },
+  { title: 'Manual de Infectología', url: 'https://www.google.com/' },
+  { title: 'Manual de Respiratorio', url: 'https://www.google.com/' },
+  { title: 'Manual de Cardiología', url: 'https://www.google.com/' },
+  { title: 'Manual de Mortalidad', url: 'https://www.google.com/' },
 ]
 
-export default function MaterialsPage() {
-  const materialList = response
+export default function ManualsPage() {
+  const manualList = response
 
-  const renderDocumentList = materials => {
+  const renderDocumentList = manuals => {
     return (
       <div className='mt-5 grid grid-cols-4 gap-5'>
-        {materials.map((material, index) => (
+        {manuals.map((manual, index) => (
           <div
             key={index}
             className='h-36 flex flex-col items-center justify-center bg-gray-50 rounded-md cursor-pointer'
-            onClick={() => window.open(material.url, '_blank')}>
+            onClick={() => window.open(manual.url, '_blank')}>
             <div className='flex justify-center'>
               <img
                 src='/pdfFile.svg'
-                alt={material.title}
+                alt={manual.title}
                 className='h-24 w-24 object-cover object-center'
               />
             </div>
-            <div className='text-base mt-2 text-center'>{material.title}</div>
+            <div className='text-base mt-2 text-center'>{manual.title}</div>
           </div>
         ))}
       </div>
@@ -38,11 +38,11 @@ export default function MaterialsPage() {
     <div className='space-y-10'>
       <CardComponent>
         <HeaderCardComponent
-          title='Materiales'
-          subtitle='Accede a una variedad de materiales educativos diseñados para complementar tu aprendizaje.'
+          title='Manuales'
+          subtitle='Accede a una colección completa de manuales que te guiarán a través de cada proceso y herramienta.'
         />
-        {materialList.length > 0 ? (
-          renderDocumentList(materialList)
+        {manualList.length > 0 ? (
+          renderDocumentList(manualList)
         ) : (
           <NoContentComponent />
         )}

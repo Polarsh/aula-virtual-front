@@ -42,7 +42,7 @@ const navigation = [
     current: false,
     children: [
       { name: 'Nuestra metodología', href: '/metodologia/metodologia' },
-      { name: 'Tendencias', href: '/metodologia/Tendencias' },
+      { name: 'Tendencias', href: '/metodologia/tendencias' },
     ],
   },
   {
@@ -50,7 +50,6 @@ const navigation = [
     icon: FolderIcon,
     current: false,
     children: [
-      { name: 'Coaching', href: '/mentoria/coaching' },
       { name: 'Asesorias', href: '/mentoria/asesorias' },
       { name: 'Test Psicológicos', href: '/mentoria/test-psicologicos' },
     ],

@@ -21,6 +21,13 @@ import ResultMockExamPage from './pages/modules/Evaluation/Mock/MockResults'
 import BankInstructionsPage from './pages/modules/Evaluation/Bank/BankInstructions'
 import ResultBankExamPage from './pages/modules/Evaluation/Bank/BankResults'
 import BankExamPage from './pages/modules/Evaluation/Bank/BankExam'
+import TutorialsPage from './pages/modules/videoteca/Tutorials'
+import ManualsPage from './pages/modules/videoteca/Manuals'
+import MethodologyPage from './pages/modules/Methodology/Methodology'
+import TrendsPage from './pages/modules/Methodology/Trends'
+import ConsultingPage from './pages/modules/Coaching/Consulting/Consulting'
+import PsychologicalTestPage from './pages/modules/Coaching/PsychologicalTest/PsychologicalTest'
+import TestPage from './pages/modules/Coaching/PsychologicalTest/Test'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -45,31 +52,58 @@ export default function App() {
           <Route index element={<HomePage />} />
           <Route path='*' element={<HomePage />} />
           <Route path='cursos' element={<CoursesPage />} />
-          <Route path='videoteca/mis-clases' element={<MyClassesPage />} />
-          <Route path='videoteca/mis-clases/:id' element={<MyClassPage />} />
-          <Route path='videoteca/cronograma' element={<SchedulePage />} />
-          <Route path='videoteca/materiales' element={<MaterialPage />} />
 
-          <Route path='evaluaciones/simulacros/'>
-            <Route index element={<MockMenu />} />
-            <Route path=':mockId/resultados' element={<ResultMockExamPage />} />
-            <Route
-              path=':mockId/instrucciones'
-              element={<MockInstructionsPage />}
-            />
-            <Route
-              path=':mockId/pregunta/:questionIndex'
-              element={<MockExamPage />}
-            />
+          <Route path='videoteca/'>
+            <Route path='mis-clases' element={<MyClassesPage />} />
+            <Route path='mis-clases/:id' element={<MyClassPage />} />
+            <Route path='tutoriales' element={<TutorialsPage />} />
+            <Route path='cronograma' element={<SchedulePage />} />
+            <Route path='materiales' element={<MaterialPage />} />
+            <Route path='manuales-ebooks' element={<ManualsPage />} />
           </Route>
-          <Route path='evaluaciones/banqueo/'>
-            <Route index element={<BankMenu />} />
-            <Route path='instrucciones' element={<BankInstructionsPage />} />
-            <Route path=':bankId/resultados' element={<ResultBankExamPage />} />
-            <Route
-              path=':bankId/pregunta/:questionIndex'
-              element={<BankExamPage />}
-            />
+
+          <Route path='evaluaciones/'>
+            <Route path='simulacros/'>
+              <Route index element={<MockMenu />} />
+              <Route
+                path=':mockId/resultados'
+                element={<ResultMockExamPage />}
+              />
+              <Route
+                path=':mockId/instrucciones'
+                element={<MockInstructionsPage />}
+              />
+              <Route
+                path=':mockId/pregunta/:questionIndex'
+                element={<MockExamPage />}
+              />
+            </Route>
+            <Route path='banqueo/'>
+              <Route index element={<BankMenu />} />
+              <Route path='instrucciones' element={<BankInstructionsPage />} />
+              <Route
+                path=':bankId/resultados'
+                element={<ResultBankExamPage />}
+              />
+              <Route
+                path=':bankId/pregunta/:questionIndex'
+                element={<BankExamPage />}
+              />
+            </Route>
+          </Route>
+
+          <Route path='metodologia/'>
+            <Route path='metodologia' element={<MethodologyPage />} />
+            <Route path='tendencias' element={<TrendsPage />} />
+          </Route>
+
+          <Route path='mentoria/'>
+            <Route path='asesorias' element={<ConsultingPage />} />
+            <Route path='test-psicologicos/'>
+              <Route index element={<PsychologicalTestPage />} />
+              <Route path='inteligencia-emocional' element={<TestPage />} />
+              <Route path='personalidad' element={<TestPage />} />
+            </Route>
           </Route>
         </Route>
       </Routes>

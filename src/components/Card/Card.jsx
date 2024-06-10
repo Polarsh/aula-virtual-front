@@ -1,14 +1,8 @@
-export default function CardComponent({
-  className,
-  children,
-
-  bgColor = 'white',
-}) {
+export default function CardComponent({ children, className = 'bg-white' }) {
   return (
-    <div className={`overflow-hidden bg-${bgColor} shadow sm:rounded-lg`}>
-      <div className='px-4 py-5 sm:p-6'>
-        <div className={className}>{children}</div>
-      </div>
+    <div
+      className={`overflow-hidden ${className} shadow sm:rounded-lg px-4 py-5 sm:p-6`}>
+      {children}
     </div>
   )
 }
