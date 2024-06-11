@@ -28,6 +28,11 @@ import TrendsPage from './pages/modules/Methodology/Trends'
 import ConsultingPage from './pages/modules/Coaching/Consulting/Consulting'
 import PsychologicalTestPage from './pages/modules/Coaching/PsychologicalTest/PsychologicalTest'
 import TestPage from './pages/modules/Coaching/PsychologicalTest/Test'
+import ResultPsychologicalPage from './pages/modules/Coaching/PsychologicalTest/Result'
+import SettingsMenu from './pages/Settings/Settings'
+import MyAccountPage from './pages/Settings/MyAccount'
+import SecurityPage from './pages/Settings/Security'
+import MyCoursesPage from './pages/Settings/MyCourses'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -52,6 +57,12 @@ export default function App() {
           <Route index element={<HomePage />} />
           <Route path='*' element={<HomePage />} />
           <Route path='cursos' element={<CoursesPage />} />
+
+          <Route path='ajustes/' element={<SettingsMenu />}>
+            <Route path='cuenta' element={<MyAccountPage />} />
+            <Route path='seguridad' element={<SecurityPage />} />
+            <Route path='mis-cursos' element={<MyCoursesPage />} />
+          </Route>
 
           <Route path='videoteca/'>
             <Route path='mis-clases' element={<MyClassesPage />} />
@@ -101,8 +112,8 @@ export default function App() {
             <Route path='asesorias' element={<ConsultingPage />} />
             <Route path='test-psicologicos/'>
               <Route index element={<PsychologicalTestPage />} />
-              <Route path='inteligencia-emocional' element={<TestPage />} />
-              <Route path='personalidad' element={<TestPage />} />
+              <Route path='resultados' element={<ResultPsychologicalPage />} />
+              <Route path=':testId' element={<TestPage />} />
             </Route>
           </Route>
         </Route>

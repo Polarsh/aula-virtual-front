@@ -1,8 +1,9 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import CardComponent from '../../../../components/Card/Card'
 import HeaderCardComponent from '../../../../components/Card/HeaderCard'
 import { Radio, RadioGroup } from '@headlessui/react'
 import ButtonComponent from '../../../../components/Buttons/Buttons'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const response = [
   {
@@ -103,6 +104,19 @@ const scores = [
   { label: 'SIEMPRE', value: 5, colspan: 3 },
 ]
 
+const testType = [
+  {
+    url: 'inteligencia-emocional',
+    title: 'Test de Inteligencia Emocional',
+    questions: response,
+  },
+  {
+    url: 'personalidad',
+    title: 'Test de Personalidad',
+    questions: response,
+  },
+]
+
 const answers = [1, 2, 3, 4, 5]
 
 function classNames(...classes) {
@@ -110,8 +124,24 @@ function classNames(...classes) {
 }
 
 export default function TestPage() {
-  const [questionData, setQuestionData] = useState(response)
+  const { testId } = useParams()
+  const navigate = useNavigate()
+
+  const [selectedTypeExam, setSelectedTypeExam] = useState(null)
+
+  const [questionData, setQuestionData] = useState([])
   const [emptyAnswers, setEmptyAnswers] = useState([])
+
+  useEffect(() => {
+    const selectedTest = testType.find(test => test.url === testId)
+    if (selectedTest) {
+      setSelectedTypeExam(selectedTest)
+      setQuestionData(selectedTest.questions)
+    } else {
+      // Redirige a la página deseada si no se encuentra el test
+      navigate('/mentoria/test-psicologicos/')
+    }
+  }, [testId])
 
   const handleOptionChange = (index, value) => {
     const newQuestionData = [...questionData]
@@ -145,7 +175,7 @@ export default function TestPage() {
         <div className='md:flex md:items-center md:justify-between md:space-x-5'>
           <div className='flex flex-col items-start'>
             <h2 className='text-2xl font-bold text-gray-900'>
-              Test de personalidad
+              {selectedTypeExam ? selectedTypeExam.title : 'Error en cargas'}
             </h2>
             <p className='text-sm font-medium text-gray-500'>
               Resolviendo examen

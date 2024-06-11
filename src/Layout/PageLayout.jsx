@@ -30,6 +30,7 @@ const titles = {
   'mentoria/test-psicologicos': 'Tests Psicológicos',
   'canales-de-atencion': 'Canales de atención',
   cursos: 'Cursos',
+  ajustes: 'Configuración',
 }
 
 export default function PageLayout() {

@@ -153,7 +153,7 @@ export default function SideBarComponent() {
           </li>
           <li className='-mx-6 mt-auto'>
             <a
-              href='#'
+              href='/ajustes'
               className='flex items-center gap-x-4 px-6 py-3 text-sm font-semibold leading-6 text-gray-400 hover:bg-gray-800 hover:text-white'>
               <Cog6ToothIcon
                 className='h-6 w-6 shrink-0 text-gray-400'
