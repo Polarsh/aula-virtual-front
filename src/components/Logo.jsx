@@ -4,7 +4,7 @@ export default function LogoComponent({ size }) {
       <span className='sr-only'>MultiServices Silver Peru</span>
       <img
         className={`h-${size} w-auto`}
-        src='/vite.svg'
+        src='/logo.svg'
         alt='Logo MultiServices Silver Peru'
       />
     </div>
