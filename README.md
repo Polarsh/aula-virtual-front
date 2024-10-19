@@ -2,31 +2,20 @@
 
 Este proyecto es una interfaz de **Aula Virtual** desarrollada en React utilizando Vite. El objetivo principal es el diseño y desarrollo de la parte visual del sistema, sin funcionalidad backend. Se trata de un prototipo para visualizar cómo lucirá la plataforma.
 
+Puedes acceder a la aplicación en el siguiente enlace:  
+[https://aula-virtual-dybsm98.firebaseapp.com/](https://aula-virtual-dybsm98.firebaseapp.com/)
+
 ## Tecnologías Utilizadas
 
 - **React**: Biblioteca de JavaScript para construir interfaces de usuario.
 - **Vite**: Herramienta de desarrollo para proporcionar un entorno rápido y eficiente en proyectos de frontend.
 - **Tailwind**: Para el diseño y estilización de los componentes.
 - **React Router**: Para la navegación entre vistas dentro de la aplicación.
+- **Firebase Hosting**: La aplicación está desplegada en Firebase Hosting, lo que garantiza un entorno de hosting rápido y seguro.
 
 ## Capturas de Pantalla
 
-### Vista del Dashboard
-![Home View](./screen-shots/dashboard.png)
-
-### Vista de Examen
-![Exam View](./screen-shots/evaluaciones-simulacros-ver_pregunta.png)
-
-### Vista de Resultados del Examen
-![Exam Result View](./screen-shots/evaluaciones-simulacros-ver_resultados.png)
-
-### Vista del Curso
-![Course View](./screen-shots/videoteca-mis_clases-curso.png)
-
-### Vista de Estadísticas de Mentorías
-![Estadisticas View](./screen-shots/mentorias-asesorias.png)
-
-Para ver más capturas de pantalla, puedes explorar la carpeta ![Capturas](./screen-shots/) dentro del repositorio.
+Para ver más capturas de pantalla, puedes explorar la carpeta ![screen-shots](./screen-shots/) dentro del repositorio.
 
 ## Instalación
 
@@ -61,4 +50,3 @@ npm run dev
 ## Notas
 
 Este proyecto es meramente un diseño para un prototipo de aula virtual, por lo tanto, no contiene lógica de negocio ni funcionalidad backend. El enfoque principal está en la presentación visual.
-
